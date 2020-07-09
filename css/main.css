@@ -13,18 +13,19 @@
    :root {
     --backgroundColor: cornflowerblue;
     --textColor: white;
-    --fontName: "Indie Flower";
+    --fontName1: "Indie Flower";
+    --fontName2: "Modak";
+    --fontName:var(--fontName1);
     --fallBack: sans-serif;
-    --fullFont: 'var(--fontName)', var(--fallBack);
   }
   
   @font-face {
-    font-family: 'var(--fontName)';
+    font-family: 'Indie Flower';
     src: url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
   }
   
   @font-face {
-    font-family: 'var(--fontName2)';
+    font-family: 'Modak';
     src: url(https://fonts.cdnfonts.com/s/15539/Modak-Regular.woff) format('woff2');
   }
   
@@ -35,7 +36,7 @@
   }
   
   p {
-     font-family: var(--fullFont);
+     font-family: var(--fontName);
   }
 
 html {
